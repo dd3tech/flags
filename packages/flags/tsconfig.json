@@ -1,0 +1,14 @@
+{
+  "display": "Flags",
+  "compilerOptions": {
+    "target": "ESNext",
+    "moduleResolution": "node",
+    "strict": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "skipLibCheck": false,
+    "module": "ESNext",
+    "outDir": "dist"
+  },
+  "exclude": ["dist"]
+}

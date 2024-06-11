@@ -1,0 +1,41 @@
+{
+  "name": "flags",
+  "version": "0.0.0",
+  "author": "dd3tech",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "main": "dist/index.mjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.mts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.mts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dd3tech/flags.git",
+    "directory": "packages/flags"
+  },
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest run --coverage"
+  },
+  "keywords": [],
+  "devDependencies": {
+    "@vitest/coverage-v8": "1.6.0",
+    "@vitest/ui": "1.6.0",
+    "tsconfig": "workspace:*",
+    "tsup": "8.1.0",
+    "vitest": "1.6.0"
+  }
+}
